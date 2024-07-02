@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const dayElement = document.getElementById('currentDay')
         const day = new Date();
         const dayString = day.toUTCString();
-        dayElement.textContent = `Current Day: ${dayString.split(" ").slice(0,4).join(" ")}`;
+        dayElement.textContent = `Current Day: ${dayString.split(" ").slice(0).join(" ")}`;
     }
 
     // Update the time immediately and then every second
